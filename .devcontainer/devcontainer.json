@@ -3,6 +3,11 @@
       "dockerfile": "Dockerfile",
       "args": { "VARIANT": "2.7-bullseye" }
     },
+    "customizations": {
+      "vscode": {
+        "extensions": ["EditorConfig.EditorConfig"]
+      }
+    },
     "postCreateCommand": ".devcontainer/postCreate.sh",
     "remoteUser": "vscode"
 }
