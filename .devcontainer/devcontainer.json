@@ -8,6 +8,13 @@
         "extensions": ["EditorConfig.EditorConfig"]
       }
     },
+    "portsAttributes": {
+        "3000": {
+            "label": "Application",
+            "onAutoForward": "notify"
+        }
+    },
     "postCreateCommand": ".devcontainer/postCreate.sh",
+    "postAttachCommand": ".devcontainer/postAttach.sh",
     "remoteUser": "vscode"
 }
