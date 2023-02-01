@@ -1,0 +1,8 @@
+{
+    "build": {
+      "dockerfile": "Dockerfile",
+      "args": { "VARIANT": "2.7-bullseye" }
+    },
+    "postCreateCommand": ".devcontainer/postCreate.sh",
+    "remoteUser": "vscode"
+}
