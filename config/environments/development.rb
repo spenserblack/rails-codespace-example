@@ -67,4 +67,7 @@ Rails.application.configure do
 
   # Uncomment if you wish to allow Action Cable access from any origin.
   # config.action_cable.disable_request_forgery_protection = true
+
+  # Allow connections to local server from a GitHub Codespace
+  config.hosts << "#{ENV['CODESPACE_NAME']}-3000.#{ENV['GITHUB_CODESPACES_PORT_FORWARDING_DOMAIN']}" if ENV['CODESPACES'] == 'true'
 end
